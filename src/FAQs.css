@@ -1,0 +1,87 @@
+/* FAQ Section */
+.faq-section {
+    padding: 5% 10%;
+    color: white;
+  }
+  
+  /* Centered FAQ Container */
+  .faqs-container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Align FAQ Title to the Left */
+  .faq-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  /* FAQ List */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* FAQ Box */
+  .faq-item {
+    background: rgba(255, 255, 255, 0.1); /* Darker Default */
+    transition: background 0.3s ease;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Hover Effect - Keep it Dark */
+  .faq-item:hover {
+    background: rgba(255, 255, 255, 0.2); /* Dark but Slightly Brighter */
+  }
+  
+  /* FAQ Question */
+  .faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* FAQ Answer (Align Left, Not Centered) */
+  .faq-answer {
+    font-size: 16px;
+    color: #ddd;
+    text-align: left; /* This fixes the alignment issue */
+  }
+  
+  /* Darker Link Colors */
+  .faq-link {
+    color: #9470e2; /* Dark Purple */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .faq-link:hover {
+    color: #fb1cfb; /* Dark Pink */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .faqs-section {
+      padding: 4%;
+    }
+  
+    .faq-question {
+      font-size: 16px;
+    }
+  
+    .faq-answer {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .faqs-section {
+      padding: 3%;
+    }
+  }
+  

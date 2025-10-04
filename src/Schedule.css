@@ -1,0 +1,175 @@
+/* Schedule Section */
+.schedule-section {
+    padding: 5% 10%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Schedule Container */
+  .schedule-container {
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  /* Schedule Title */
+  .schedule-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Time Range Text */
+  .schedule-time-range {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Main Box */
+  .schedule-box {
+    background: rgba(255, 255, 255, 0.1); /* Light Gray Box */
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  /* Vertical dividers using pseudo-elements on the container */
+  .schedule-box::before,
+  .schedule-box::after {
+    content: "";
+    position: absolute;
+    top: 20px; /* Add space at the top to match padding */
+    bottom: 20px; /* Add space at the bottom to match padding */
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Position for first vertical divider (after time column) */
+  .schedule-box::before {
+    left: 14.3%; /* Simplified calculation: 1/(1+2+3) = 1/6 = 16.66% */
+  }
+  
+  /* Position for second vertical divider (after event column) */
+  .schedule-box::after {
+    left: 70%; /* Simplified calculation: (1+2)/(1+2+3) = 3/6 = 50% */
+  }
+  
+  /* Each Row */
+  .schedule-row {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr; /* Time | Event | Description */
+    padding: 15px 0;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    gap: 0; /* Remove any gap between columns */
+  }
+  
+  /* Last row has no bottom border */
+  .schedule-row:last-child {
+    border-bottom: none;
+  }
+  
+  /* Cell styling */
+  .schedule-time,
+  .schedule-event,
+  .schedule-description {
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  /* Text Styling */
+  .schedule-time {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .schedule-event {
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .schedule-description {
+    font-size: 18px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .schedule-section {
+      padding: 4%;
+    }
+  
+    .schedule-box {
+      padding: 15px;
+    }
+    
+    /* Adjust spacing for smaller padding on mobile */
+    .schedule-box::before,
+    .schedule-box::after {
+      top: 15px;
+      bottom: 15px;
+    }
+  
+    .schedule-row {
+      grid-template-columns: 1fr 2fr; /* Adjust layout for smaller screens */
+      grid-gap: 10px;
+    }
+  
+    /* Adjust vertical line for tablet view */
+    .schedule-box::before {
+      left: 33.33%; /* 1/(1+2) = 1/3 */
+    }
+  
+    .schedule-box::after {
+      display: none; /* Hide second vertical line on smaller screens */
+    }
+  
+    .schedule-time {
+      text-align: left;
+    }
+  
+    .schedule-event {
+      font-size: 16px;
+    }
+  
+    .schedule-description {
+      font-size: 16px;
+      grid-column: 1 / -1;
+      margin-top: 5px;
+      padding-left: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .schedule-section {
+      padding: 3%;
+    }
+  
+    .schedule-row {
+      grid-template-columns: 1fr; /* Full width on smallest screens */
+      text-align: left;
+    }
+  
+    /* Hide all vertical lines on mobile */
+    .schedule-box::before,
+    .schedule-box::after {
+      display: none;
+    }
+  
+    .schedule-time {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    
+    /* Reset description for mobile */
+    .schedule-description {
+      padding-left: 15px;
+    }
+  }
