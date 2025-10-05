@@ -1,59 +1,121 @@
-/* NAVBAR */
-.navbar{
+/* NAVBAR (updated) */
+.navbar {
   position: fixed;
   top: 0; left: 0;
   width: 100%;
-  background: #fff;
+  max-width: 100%;
+  background-color: white;
   z-index: 1000;
-  padding: 12px 2%;             /* fixed vertical, % horizontal is fine */
+  padding: 12px 2%;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }
 
-.nav-content{
+.nav-content {
   display: flex;
   align-items: center;
-  justify-content: center;       /* center the whole group */
-  gap: 225px;                     /* equal, fixed spacing between items */
-  width: auto;                   /* let content size itself */
+  justify-content: center;   /* center the whole group */
+  gap: 32px;                 /* equal, fixed spacing between items */
+  width: auto;               /* let content size itself */
   margin: 0 auto;
   box-sizing: border-box;
   flex-wrap: nowrap;
 }
 
 /* Base link */
-.nav-link{
+.nav-link {
   text-decoration: none;
-  color: #000;
-  opacity: .7;
+  color: black;
+  opacity: 0.7;
   font-weight: 600;
   font-size: clamp(12px, 2vw, 13px);
-  transition: color .3s ease, font-weight .3s ease, opacity .3s ease;
+  transition: color 0.3s ease, font-weight 0.3s ease, opacity 0.3s ease;
   text-align: center;
-  margin: 0;                     /* prevent rogue margins */
-  display: inline-block;         /* size to content */
+  margin: 0;                 /* no rogue margins */
+  display: inline-block;     /* size to content */
+  /* removed width:10% to prevent uneven spacing */
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: #AC05FF;
   font-weight: 700;
   opacity: 1;
 }
 
-/* “Register” styled like a button but same structure as other links */
-.get-started-btn{
-  padding: 8px 14px;             /* use px/rem, not % */
-  border-radius: 8px;
-  background: #AC05FF;
-  color: #fff;
+/* Register link styled as a button (same element type as others) */
+.get-started-btn {
+  background-color: #AC05FF;
+  color: white;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
-  line-height: 1;                /* keeps height tight */
+  display: inline-block;
+  font-weight: 600;
+  font-size: clamp(12px, 2vw, 13px);
+  line-height: 1;
+  padding: 8px 14px;         /* px/rem so it doesn’t balloon */
+  margin: 0;                 /* keep spacing controlled by gap */
   white-space: nowrap;
+  text-align: center;
 }
 
-.get-started-btn:hover{
-  background: #C20CFF;
+.get-started-btn:hover {
+  background-color: #C20CFF;
+  font-weight: 700;
+}
+
+/* ===== Footer (unchanged) ===== */
+.footer-container {
+  width: 100%;
+  background: linear-gradient(180deg, #010B56, #000422);
+  border-radius: 8% 8% 0 0; 
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 3% 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-link .footer-text{
+  font-size: 2vw;
+  margin-bottom: 4%;
+  line-height: 1.3;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-img {
+  min-width: 5%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .footer-link .footer-text{
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons{
+    gap: 5%;
+    width: 40%;
+  }
+  .footer-link .footer-text{
+    font-size: 60%;
+  }
 }
