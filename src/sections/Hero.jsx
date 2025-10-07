@@ -6,7 +6,7 @@ import Text from "../components/text/Text";
 
 const Hero = () => {
   return (
-    <section className="my-0 grid grid-cols-1 w-[71%] max-w-screen-2xl mx-auto px-6 md:px-18 sm:pt-2 md:pt-4 lg:pt-6 xl:pt-8">
+    <section className="my-0 grid grid-cols-1 w-[85%] max-w-screen-2xl mx-auto px-6 md:px-18 sm:pt-2 md:pt-4 lg:pt-6 xl:pt-8">
       {/* TOP: Title block centered */}
       <div className="flex flex-col items-center">
         {/* 2 line breaks worth of space */}
@@ -50,7 +50,7 @@ const Hero = () => {
         {/* RIGHT column: smaller image aligned to the right */}
         <div className="flex md:justify-end">
           <img
-            className="object-cover rounded-4xl w-full max-w-sm md:max-w-md"
+            className="object-cover rounded-4xl w-full max-w-lg md:max-w-lg"
             src={heroComputer}
             alt="Computer in the foreground of a crowd with the words Welcome to WiTCON"
           />
