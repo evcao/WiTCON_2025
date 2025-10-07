@@ -54,7 +54,7 @@ const witconTeam = [
   { role: "WiTCON Industry Relations", name: "Gillian Garcia", image: WitconIndustry2Img },
   { role: "WiTCON WebDev", name: "Huong Huynh", image: WitconWebDevImg },
   { role: "WiTCON Tech Lead", name: "Agatha Gonzalez", image: WICsTechLead1Img },
-    { role: "WiTCON Mentor", name: "Evelyn Cao", image: WitconCreativeImg },
+  { role: "WiTCON Mentor", name: "Evelyn Cao", image: WitconCreativeImg },
 ];
 
 const wicsTeam = [
@@ -82,24 +82,31 @@ const wicsTeam = [
   { role: "WiCs Industry Relation", name: "Felix Jarquin", image: WICSIndustryRelationImg },
 
 ];
+{/* <section className="witcon-section">
+  <div className="w-full flex justify-center -mt-10 md:-mt-16">
+    <Subtitle className="text-center">
+      What is WiTCON?
+    </Subtitle>
+  </div> */}
 
 const Team = () => {
-  return (
-    <Layout>
-      <div className="team-container">
-        {/* WITCON Team */}
-        <div className="team-section">
-          <Subtitle>WiTCON Team</Subtitle>
-          <div className="team-grid">
-            {witconTeam.map((member, index) => (
-              <div className="team-member" key={index}>
-                <img src={member.image || DefaultImg} alt={member.role} />
-                <Text>{member.role}</Text>
-                <Text className="team-name">{member.name}</Text> {/* Display Name */}
-              </div>
-            ))}
-          </div>
+return (
+  <Layout>
+    <div className="team-container">
+      {/* WITCON Team */}
+      <div className="team-section">
+        <Subtitle> WiTCON Team</Subtitle>
+
+        <div className="team-grid">
+          {witconTeam.map((member, index) => (
+            <div className="team-member" key={index}>
+              <img src={member.image || DefaultImg} alt={member.role} />
+              <Text>{member.role}</Text>
+              <Text className="team-name">{member.name}</Text>
+            </div>
+          ))}
         </div>
+      </div>
 
         {/* WiCS Team */}
         <div className="team-section">
