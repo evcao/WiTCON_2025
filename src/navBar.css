@@ -1,39 +1,41 @@
+/* NAVBAR (updated) */
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   max-width: 100%;
   background-color: white;
   z-index: 1000;
-  padding: 1% 2%;
+  padding: 12px 2%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }
-
 
 .nav-content {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  gap: 10%;
-  width: 100%;
+  justify-content: center;   /* center the whole group */
+  gap: 225px;                 /* equal, fixed spacing between items */
+  width: auto;               /* let content size itself */
+  margin: 0 auto;
   box-sizing: border-box;
-  margin: 0% 3%;
+  flex-wrap: nowrap;
 }
 
+/* Base link */
 .nav-link {
   text-decoration: none;
   color: black;
   opacity: 0.7;
   font-weight: 600;
   font-size: clamp(12px, 2vw, 13px);
-  transition: color 0.3s ease, font-weight 0.3s ease;
-  width: 10%;
+  transition: color 0.3s ease, font-weight 0.3s ease, opacity 0.3s ease;
   text-align: center;
+  margin: 0;                 /* no rogue margins */
+  display: inline-block;     /* size to content */
+  /* removed width:10% to prevent uneven spacing */
 }
 
 .nav-link:hover {
@@ -42,23 +44,21 @@
   opacity: 1;
 }
 
+/* Register link styled as a button (same element type as others) */
 .get-started-btn {
   background-color: #AC05FF;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   font-weight: 600;
   font-size: clamp(12px, 2vw, 13px);
-  min-height: 24px;
-  transition: background-color 0.3s ease, color 0.3s ease, font-weight 0.3s ease;
+  line-height: 1;
+  padding: 8px 14px;         /* px/rem so it doesn’t balloon */
+  margin: 0;                 /* keep spacing controlled by gap */
+  white-space: nowrap;
   text-align: center;
-  padding: 5% 10%;
-  margin: 0 2%;
-  white-space: nowrap
 }
 
 .get-started-btn:hover {
@@ -66,7 +66,7 @@
   font-weight: 700;
 }
 
-/* Footer  */
+/* ===== Footer (unchanged) ===== */
 .footer-container {
   width: 100%;
   background: linear-gradient(180deg, #010B56, #000422);

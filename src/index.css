@@ -30,3 +30,51 @@ html, body {
 .blur {
   filter: blur(120px);
 }
+
+/* === Ari W9500 (regular + bold) === */
+@font-face {
+  font-family: "Ari W9500";
+  src: url("/fonts/ari/ari-w9500.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ari W9500";
+  src: url("/fonts/ari/ari-w9500-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Ari W9500 Condensed === */
+@font-face {
+  font-family: "Ari W9500 Condensed";
+  src: url("/fonts/ari/ari-w9500-condensed.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ari W9500 Condensed";
+  src: url("/fonts/ari/ari-w9500-condensed-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Ari W9500 Display === */
+@font-face {
+  font-family: "Ari W9500 Display";
+  src: url("/fonts/ari/ari-w9500-display.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ari W9500 Display";
+  src: url("/fonts/ari/ari-w9500-condensed-display.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

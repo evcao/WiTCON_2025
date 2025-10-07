@@ -9,27 +9,29 @@ import Sponsors from '../sections/Sponsors.jsx';
 import Footer from "../sections/Footer.jsx";
 import { Link } from "react-router-dom";
 
-
 function App() {
   return (
     <>
       <div className="navbar text-base text-white font-[Pixelify_Sans]">
         <div className="nav-content">
-          <a href="#main-content" className="nav-link">
-            Home
-          </a>
+          <a href="#main-content" className="nav-link">Home</a>
           <Link to="/faq-section" className="nav-link">FAQ</Link>
-          <Link to ="/team" className="nav-link">
-            Team
-          </Link>
+          <Link to="/team" className="nav-link">Team</Link>
           <a
             href="https://airtable.com/appE94lSN4LzuVA8T/pag9913jUMrtO3XF1/form"
             className="nav-link"
           >
             Volunteer
           </a>
-          <a href="https://lu.ma/hwyplw5v">
-            <button className="get-started-btn">Register</button>
+
+          {/* "Register" styled as a button but same structure as others */}
+          <a
+            href="https://lu.ma/hwyplw5v"
+            className="nav-link get-started-btn"
+            role="button"
+            rel="noopener noreferrer"
+          >
+            Register
           </a>
         </div>
       </div>

@@ -32,7 +32,7 @@ const CountdownTimer = () => {
     return (
     <section
         className="mb-10 grid place-content-center gap-y-10 max-xl:grid-cols-1 max-w-screen-lg mx-auto px-4 pt-6">
-        <div className="flex space-x-3 py-10 place-content-center">
+        <div className="flex space-x-3 py-0 place-content-center">
                 <Title>
                     <span>{String(timeLeft.days).padStart(2, "0")}D : </span>
                     <span>{String(timeLeft.hours).padStart(2, "0")}H : </span>
