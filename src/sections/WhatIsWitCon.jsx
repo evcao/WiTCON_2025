@@ -16,16 +16,21 @@ import Subtitle from "../components/text/Subtitle";
 
 const WhatIsWitCon = () => {
   const slides = [slide1, slide2, slide3, slide4, slide5, slide6];
-
+  
   return (
-    <section className="witcon-section">
-      <div className="content-container">
-      <div className="image-box">
-          <img src={WicsPanel} alt="Panel of women in computing" />
-        </div>
+<section className="witcon-section">
+  <div className="w-full flex justify-center -mt-10 md:-mt-16">
+    <Subtitle className="text-center">
+      What is WiTCON?
+    </Subtitle>
+  </div>
+
+  <div className="content-container mt-[40px]">
+    <div className="image-box">
+      <img src={WicsPanel} alt="Panel of women in computing" />
+    </div>
 
         <div className="text-box">
-          <Subtitle>What is WiTCON?</Subtitle>
           <p>
             WiTCON 2025 is the signature Women in Technology Conference at
             Florida International University.

@@ -48,6 +48,8 @@
 .swiper-container {
   width: 100%;
   margin: auto;
+  margin-top: 3rem;      /* push it down */
+
 }
 
 /* Swiper */
@@ -79,7 +81,7 @@
 
 @media (min-width: 1024px) {
   .witcon-section {
-    padding: 5% 12%;
+    padding: 10% 12%;
   }
   .text-box h2 {
     font-size: 2.5vw;

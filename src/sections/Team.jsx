@@ -46,7 +46,6 @@ import DefaultImg from "../assets/WicsPic1.jpg";
 const witconTeam = [
   { role: "WiTCON Director", name: "Fer Pacheco", image: WitconDirectorImg },
   { role: "WiTCON Co-Director", name: "Meagan Alfaro", image: WitconCoDirectorImg },
-  { role: "WiTCON Creative", name: "Evelyn Cao", image: WitconCreativeImg },
   { role: "WiTCON Industry Relations", name: "Devin Diaz", image: WitconIndustry1Img },
   { role: "WiTCON Logistics", name: "Alyaa Mossa", image: WitconLogisticsImg },
   { role: "WiTCON Comms Chair", name: "Alessandra Ortega", image: WitconCommsChairImg },
@@ -55,6 +54,7 @@ const witconTeam = [
   { role: "WiTCON Industry Relations", name: "Gillian Garcia", image: WitconIndustry2Img },
   { role: "WiTCON WebDev", name: "Huong Huynh", image: WitconWebDevImg },
   { role: "WiTCON Tech Lead", name: "Agatha Gonzalez", image: WICsTechLead1Img },
+    { role: "WiTCON Mentor", name: "Evelyn Cao", image: WitconCreativeImg },
 ];
 
 const wicsTeam = [
