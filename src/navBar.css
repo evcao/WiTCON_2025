@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;   /* center the whole group */
-  gap: 32px;                 /* equal, fixed spacing between items */
+  gap: 225px;                 /* equal, fixed spacing between items */
   width: auto;               /* let content size itself */
   margin: 0 auto;
   box-sizing: border-box;
