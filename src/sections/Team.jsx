@@ -82,12 +82,6 @@ const wicsTeam = [
   { role: "WiCs Industry Relation", name: "Felix Jarquin", image: WICSIndustryRelationImg },
 
 ];
-{/* <section className="witcon-section">
-  <div className="w-full flex justify-center -mt-10 md:-mt-16">
-    <Subtitle className="text-center">
-      What is WiTCON?
-    </Subtitle>
-  </div> */}
 
 const Team = () => {
 return (
@@ -96,6 +90,9 @@ return (
       {/* WITCON Team */}
       <div className="team-section">
         <Subtitle> WiTCON Team</Subtitle>
+                  <div className="h-2" />
+                  <Text>Meet the team that makes WiTCON a Reality</Text>
+                  <div className="h-2" />
 
         <div className="team-grid">
           {witconTeam.map((member, index) => (
@@ -111,6 +108,9 @@ return (
         {/* WiCS Team */}
         <div className="team-section">
           <Subtitle>WiCS Team</Subtitle>
+              <div className="h-2" />
+                  <Text>Meet the team that makes WiCS a Reality</Text>
+              <div className="h-2" />
           <div className="team-grid">
             {wicsTeam.map((member, index) => (
               <div className="team-member" key={index}>
