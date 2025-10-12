@@ -10,9 +10,7 @@ const Homepage = () => {
         <FAQs />
       </div>
       
-      <div className="flex flex-col items-center justify-center text-center">
-        <img className="max-w-50 max-h-50 my-10" src={wicsLogo} />
-      </div>
+
     </>
   );
 };

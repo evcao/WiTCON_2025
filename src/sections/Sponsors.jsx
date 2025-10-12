@@ -13,55 +13,66 @@ import RewriteTheCode from '../assets/Company logos/RewriteTheCode.png';
 import Kaseya from '../assets/Company logos/Kaseya.png';
 import Celsius from '../assets/Company logos/Celsius.png';
 
+// ⬇️ Add your WiCS logo (adjust path/filename as needed)
+import wicsLogo from "../assets/wicsLogo.svg";
+
 const sponsors = [
-    { name: "Akamai", logo: Akamai },
-    { name: "Capital One", logo: CapitalOne },
-    { name: "Google", logo: Google },
-    { name: "Microsoft", logo: Microsoft },
-    { name: "Cisco", logo: Cisco },
-    { name: "UKG", logo: UKG },
-    { name: "Kaseya", logo: Kaseya},
+  { name: "Akamai", logo: Akamai },
+  { name: "Capital One", logo: CapitalOne },
+  { name: "Google", logo: Google },
+  { name: "Microsoft", logo: Microsoft },
+  { name: "Cisco", logo: Cisco },
+  { name: "UKG", logo: UKG },
+  { name: "Kaseya", logo: Kaseya },
 ];
 
 const communitySponsors = [
-    { name: "Break Through Tech", logo: BreakThroughTech },
-    { name: "Code Path Org", logo: CodePath },
-    { name: "Rewriting the Code", logo: RewriteTheCode },
-    { name: "FIU College of Engineering and Computing", logo: FIUCEC },
-    { name: "Celsius", logo: Celsius}
-]
+  { name: "Break Through Tech", logo: BreakThroughTech },
+  { name: "Code Path Org", logo: CodePath },
+  { name: "Rewriting the Code", logo: RewriteTheCode },
+  { name: "FIU College of Engineering and Computing", logo: FIUCEC },
+  { name: "Celsius", logo: Celsius },
+];
 
 export default function SponsorsSection() {
-    return (
-<section className="mb-10 max-w-screen-lg mx-auto px-2 pt-6">
-  <div className="grid place-items-center">
-    <Subtitle className="py-10 text-center">Our Sponsors</Subtitle>
-  </div>
+  return (
+    <section className="mb-10 max-w-screen-lg mx-auto px-2 pt-6">
+      <div className="grid place-items-center">
+        <Subtitle className="py-10 text-center">Our Sponsors</Subtitle>
+      </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-10 items-center justify-center">
-                {sponsors.map((sponsor, index) => (
-                    <div key={index} className="flex justify-center">
-                        <div className="w-52 h-52 flex items-center justify-center overflow-hidden">
-                            <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
-                        </div>
-                    </div>
-                ))}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-10 items-center justify-center">
+        {sponsors.map((sponsor, index) => (
+          <div key={index} className="flex justify-center">
+            <div className="w-52 h-52 flex items-center justify-center overflow-hidden">
+              <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
             </div>
+          </div>
+        ))}
+      </div>
 
-            <div>
-                <Subtitle className="flex space-x-3 py-10 place-content-center">
-                    Our Community Partners
-                </Subtitle>
+      <div className="grid place-items-center">
+        <Subtitle className="py-10 text-center">Our Community Partners</Subtitle>
+      </div>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-10 items-center justify-center">
+        {communitySponsors.map((sponsor, index) => (
+          <div key={index} className="flex justify-center">
+            <div className="w-52 h-52 flex items-center justify-center overflow-hidden">
+              <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-10 items-center justify-center">
-            {communitySponsors.map((sponsor, index) => (
-                    <div key={index} className="flex justify-center">
-                        <div className="w-52 h-52 flex items-center justify-center overflow-hidden">
-                            <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </section>
-    );
+          </div>
+        ))}
+      </div>
+
+      {/* WiCS logo at the very bottom */}
+      <div className="flex flex-col items-center justify-center text-center">
+        <img
+          src={wicsLogo}
+          alt="WiCS (Women in Computer Science) logo"
+          className="w-40 md:w-48 lg:w-56 h-auto my-12 object-contain"
+        />
+      </div>
+    </section>
+  );
 }

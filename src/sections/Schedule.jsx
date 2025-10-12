@@ -4,7 +4,9 @@ import React from "react";
 import Subtitle from "../components/text/Subtitle";
 import Text from "../components/text/Text";
 import "../Schedule.css";
-import WiTCONCarousel from "../components/WiTCONCarousel"; // <— import the new component
+import WiTCONCarousel from "../components/WiTCONCarousel";
+import Footer from "../sections/Footer"; // <-- updated path
+import Title from "../components/text/Title";
 
 const scheduleData = [
   { time: "9AM-1PM", event: "Priority Check-In", description: "GC Ballrooms Lobby" },
@@ -27,15 +29,14 @@ const scheduleData = [
 const Schedule = () => {
   return (
     <>
-      {/* Carousel on top */}
       <WiTCONCarousel />
 
-      {/* Schedule below */}
-      <section className="schedule-section">
-        <div className="schedule-container">
-          <Subtitle className="schedule-title">Schedule</Subtitle>
-          <Text className="schedule-time-range">From 9:00 AM - 7:00 PM</Text>
-
+<section className="schedule-section">
+  <div className="schedule-container mx-auto max-w-5xl">
+    <div className="text-center">
+      <Title className="schedule-title">Schedule</Title>
+      <Subtitle className="schedule-time-range">From 9:00 AM - 7:00 PM</Subtitle>
+    </div>
           <div className="schedule-box">
             {scheduleData.map((item, index) => (
               <div key={index} className="schedule-row">
@@ -47,6 +48,8 @@ const Schedule = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 };

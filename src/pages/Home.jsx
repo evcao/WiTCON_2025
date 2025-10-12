@@ -43,9 +43,10 @@ function App() {
           <div className="WhatIsWitCon text-base text-white font-[Pixelify_Sans]">
             <WhatIsWitcon/>
           </div>
+          <Homepage/>
           <div className="Testimonials text-base text-white font-[Pixelify_sans]"><Testimonials/></div>
           <div className="Sponsors text-base text-white font-[Pixelify_sans]"><Sponsors/></div>
-          <Homepage/>
+          
         </div>
         <div>
 
