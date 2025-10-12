@@ -15,7 +15,7 @@ function App() {
       <div className="navbar text-base text-white font-[Pixelify_Sans]">
         <div className="nav-content">
           <a href="#main-content" className="nav-link">Home</a>
-          <Link to="/faq-section" className="nav-link">FAQ</Link>
+          <Link to="/Schedule-section" className="nav-link">Schedule</Link>
           <Link to="/team" className="nav-link">Team</Link>
           <a
             href="https://airtable.com/appE94lSN4LzuVA8T/pag9913jUMrtO3XF1/form"
@@ -43,9 +43,10 @@ function App() {
           <div className="WhatIsWitCon text-base text-white font-[Pixelify_Sans]">
             <WhatIsWitcon/>
           </div>
+          <Homepage/>
           <div className="Testimonials text-base text-white font-[Pixelify_sans]"><Testimonials/></div>
           <div className="Sponsors text-base text-white font-[Pixelify_sans]"><Sponsors/></div>
-          <Homepage/>
+          
         </div>
         <div>
 
@@ -53,8 +54,6 @@ function App() {
 
       </Layout>
         <Footer></Footer>
-      
-      
     </>
   );
 }

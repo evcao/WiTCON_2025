@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar text-base text-white font-[Pixelify_Sans]">
       <div className="nav-content">
         <Link to="/" className="nav-link">Home</Link>
-        <HashLink smooth to="/faq-section" className="nav-link">FAQ</HashLink>
+        <HashLink smooth to="/schedule-section" className="nav-link">Schedule</HashLink>
         <Link to="/team" className="nav-link">Team</Link>
         <a href="https://airtable.com/appE94lSN4LzuVA8T/pag9913jUMrtO3XF1/form" className="nav-link">Volunteer</a>
         <a href="https://lu.ma/hwyplw5v" className="nav-link-button">

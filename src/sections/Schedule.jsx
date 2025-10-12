@@ -1,11 +1,16 @@
+"use client";
+
 import React from "react";
 import Subtitle from "../components/text/Subtitle";
 import Text from "../components/text/Text";
-import "../Schedule.css"; 
+import "../Schedule.css";
+import WiTCONCarousel from "../components/WiTCONCarousel";
+import Footer from "../sections/Footer"; // <-- updated path
+import Title from "../components/text/Title";
 
 const scheduleData = [
   { time: "9AM-1PM", event: "Priority Check-In", description: "GC Ballrooms Lobby" },
-  { time: "10AM", event: "Opening Ceremony", description: "GC Westballrooms"},
+  { time: "10AM", event: "Opening Ceremony", description: "GC Westballrooms" },
   { time: "11AM", event: "Women in Tech Panel - Redefining the Standard: Women in Tech Today", description: "GC 140" },
   { time: "12PM", event: "Lunch + Tabling With Student Orgs", description: "GC Pit" },
   { time: "1PM-3PM", event: "LinkedIn Headshot Photoshoot With CodePath", description: "GC Ballrooms Lobby" },
@@ -23,22 +28,29 @@ const scheduleData = [
 
 const Schedule = () => {
   return (
-    <section className="schedule-section">
-      <div className="schedule-container">
-        <Subtitle className="schedule-title">Schedule</Subtitle>
-        <Text className="schedule-time-range">From 9:00 AM - 7:00 PM</Text>
+    <>
+      <WiTCONCarousel />
 
-        <div className="schedule-box">
-          {scheduleData.map((item, index) => (
-            <div key={index} className="schedule-row">
-              <Text className="schedule-time">{item.time}</Text>
-              <Text className="schedule-event">{item.event}</Text>
-              <Text className="schedule-description">{item.description}</Text>
-            </div>
-          ))}
+<section className="schedule-section">
+  <div className="schedule-container mx-auto max-w-5xl">
+    <div className="text-center">
+      <Title className="schedule-title">Schedule</Title>
+      <Subtitle className="schedule-time-range">From 9:00 AM - 7:00 PM</Subtitle>
+    </div>
+          <div className="schedule-box">
+            {scheduleData.map((item, index) => (
+              <div key={index} className="schedule-row">
+                <Text className="schedule-time">{item.time}</Text>
+                <Text className="schedule-event">{item.event}</Text>
+                <Text className="schedule-description">{item.description}</Text>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <Footer />
+    </>
   );
 };
 
