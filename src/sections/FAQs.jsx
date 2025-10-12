@@ -87,27 +87,30 @@ const FAQs = () => {
   };
 
   return (
-    <section className="faq-section">
-      <div className="faq-container">
-        <Subtitle className="text-3xl font-bold text-center mb-8 text-white">
-          FAQs
-        </Subtitle>
-        <br />
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div key={index} className="faq-item" onClick={() => toggleFAQ(index)}>
-              <div className="flex justify-between items-center">
-                <Text className="faq-question">{faq.question}</Text>
-                <span className="text-xl text-white">{openIndex === index ? "−" : "+"}</span>
-              </div>
-              {openIndex === index && (
-                <Text className="faq-answer">{faq.answer}</Text>
-              )}
-            </div>
-          ))}
+<section className="faq-section">
+  <div className="faq-container mx-auto max-w-10xl text-left">
+    {/* Title only */}
+    <div className="w-full text-center">
+      <Subtitle className="text-3xl font-bold mb-8 text-white">
+        FAQs
+      </Subtitle>
+    </div>
+
+    <div className="space-y-4">
+      {faqs.map((faq, index) => (
+        <div key={index} className="faq-item" onClick={() => toggleFAQ(index)}>
+          <div className="flex justify-between items-center">
+            <Text className="faq-question">{faq.question}</Text>
+            <span className="text-xl text-white">{openIndex === index ? "−" : "+"}</span>
+          </div>
+          {openIndex === index && (
+            <Text className="faq-answer">{faq.answer}</Text>
+          )}
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
   );
 };
 

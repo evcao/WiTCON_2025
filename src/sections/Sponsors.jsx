@@ -33,12 +33,10 @@ const communitySponsors = [
 
 export default function SponsorsSection() {
     return (
-        <section className="mb-10 grid place-content-center gap-y-10 max-w-screen-lg mx-auto px-2 pt-6">
-            <div>
-                <Subtitle className="flex space-x-3 py-10 place-content-center">
-                    Our Sponsors
-                </Subtitle>
-            </div>
+<section className="mb-10 max-w-screen-lg mx-auto px-2 pt-6">
+  <div className="grid place-items-center">
+    <Subtitle className="py-10 text-center">Our Sponsors</Subtitle>
+  </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-10 items-center justify-center">
                 {sponsors.map((sponsor, index) => (

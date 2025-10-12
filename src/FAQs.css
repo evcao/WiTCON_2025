@@ -6,17 +6,18 @@
   
   /* Centered FAQ Container */
   .faqs-container {
-    max-width: 800px;
+    max-width: 1500px;
     margin: auto;
   }
   
-  /* Align FAQ Title to the Left */
-  .faq-title {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 20px;
-  }
+  /* Align FAQ Title to the Cener */
+.faq-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center; /* changed from left */
+  margin: 0 auto 20px; /* centers block elements horizontally */
+  display: block; /* ensures margin auto works */
+}
   
   /* FAQ List */
   .faq-list {

@@ -27,12 +27,10 @@ const testimonials = [
 
 export default function TestimonialCarousel() {
     return (
-        <section className="mb-10 grid place-content-center gap-y-10 max-xl:grid-cols-1 max-w-screen-lg mx-auto px-4 pt-6">
-            <div>
-                <Subtitle className="flex space-x-3 py-10 place-content-center">
-                Testimonials
-                </Subtitle>
-            </div>
+<section className="mb-10 max-w-screen-lg mx-auto px-2 pt-6">
+  <div className="grid place-items-center">
+    <Subtitle className="py-10 text-center">Testimonials</Subtitle>
+  </div>
             <div className="w-full max-w-30xl align-center mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-10 p-4">
                 {testimonials.map((testimonial, index) => (
                     <div key={index}
