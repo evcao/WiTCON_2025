@@ -1,12 +1,12 @@
 /* FAQ Section */
 .faq-section {
-    padding: 5% 12.5%;
+    padding: 5% 18%;
     color: white;
   }
   
   /* Centered FAQ Container */
   .faqs-container {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: auto;
   }
   

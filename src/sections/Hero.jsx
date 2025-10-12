@@ -6,7 +6,7 @@ import Text from "../components/text/Text";
 
 const Hero = () => {
   return (
-    <section className="my-0 grid grid-cols-1 w-[85%] max-w-screen-2xl mx-auto px-6 md:px-18 sm:pt-2 md:pt-4 lg:pt-6 xl:pt-8">
+    <section className="my-0 grid grid-cols-1 w-[70%] max-w-screen-2xl mx-auto px-6 md:px-18 sm:pt-2 md:pt-4 lg:pt-6 xl:pt-8">
       {/* TOP: Title block centered */}
       <div className="flex flex-col items-center">
         {/* 2 line breaks worth of space */}
