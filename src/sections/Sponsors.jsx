@@ -34,7 +34,7 @@ const communitySponsors = [
 
 export default function SponsorsSection() {
   return (
-    <section className="mb-10 max-w-screen-xl mx-auto pt-6">
+    <section className="mb-10 max-w-screen-xl mx-auto pt-30">
       <div className="grid place-items-center">
         <Subtitle className="py-10 text-center">Our Sponsors</Subtitle>
       </div>
@@ -69,7 +69,7 @@ export default function SponsorsSection() {
         <img
           src={wicsLogo}
           alt="WiCS (Women in Computer Science) logo"
-          className="w-40 md:w-48 lg:w-56 h-auto my-12 object-contain"
+          className="w-40 md:w-48 lg:w-56 h-auto my-20 object-contain"
         />
       </div>
     </section>

@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 function App() {
   return (
     <>
-      <div className="navbar text-base text-white font-[Pixelify_Sans]">
+      <div className="navbar text-base text-white font-[public/fonts/ari/ari-w9500-condensed-bold.ttf]">
         <div className="nav-content">
           <a href="#main-content" className="nav-link">Home</a>
           <Link to="/Schedule-section" className="nav-link">Schedule</Link>
@@ -39,13 +39,13 @@ function App() {
       <Layout>
         <div id="main-content" className="main-content">
           <Hero/>
-          <div className="Countdown text-base text-white font-[Pixelify_Sans]"><Countdown/></div>
-          <div className="WhatIsWitCon text-base text-white font-[Pixelify_Sans]">
+          <div className="Countdown text-base text-white font-[public/fonts/ari/ari-w9500-condensed-bold.ttf]"><Countdown/></div>
+          <div className="WhatIsWitCon text-base text-white font-[public/fonts/ari/ari-w9500-condensed-bold.ttf]">
             <WhatIsWitcon/>
           </div>
           <Homepage/>
-          <div className="Testimonials text-base text-white font-[Pixelify_sans]"><Testimonials/></div>
-          <div className="Sponsors text-base text-white font-[Pixelify_sans]"><Sponsors/></div>
+          <div className="Testimonials text-base text-white font-[public/fonts/ari/ari-w9500-condensed-bold.ttf]"><Testimonials/></div>
+          <div className="Sponsors text-base text-white font-[public/fonts/ari/ari-w9500-condensed-bold.ttf]"><Sponsors/></div>
           
         </div>
         <div>

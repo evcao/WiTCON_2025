@@ -6,7 +6,7 @@ import { HashLink } from "react-router-hash-link";
 const Navbar = () => {
 
   return (
-    <nav className="navbar text-base text-white font-[Pixelify_Sans]">
+    <nav className="navbar text-base text-white font-[public/fonts/ari/ari-w9500-condensed-bold.ttf]">
       <div className="nav-content">
         <Link to="/" className="nav-link">Home</Link>
         <HashLink smooth to="/schedule-section" className="nav-link">Schedule</HashLink>

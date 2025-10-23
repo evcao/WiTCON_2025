@@ -27,7 +27,7 @@ const testimonials = [
 
 export default function TestimonialCarousel() {
     return (
-<section className="mb-10 max-w-screen-xl mx-auto px-8 pt-6 space-y-6">
+<section className="mb-10 max-w-screen-xl mx-auto px-8 pt-30 space-y-6">
   <div className="grid place-items-center">
     <Subtitle className="py-10 text-center">
         Testimonials

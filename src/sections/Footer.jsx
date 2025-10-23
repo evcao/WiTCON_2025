@@ -6,7 +6,7 @@ import Twitter from "../assets/Twitter.png";
 
 const Footer = () => {
   return (
-    <div className="footer-container text-base text-white font-[Pixelify_Sans]">
+    <div className="footer-container text-base text-white font-[public/fonts/ari/ari-w9500-condensed-bold.ttf]">
       <div className="footer-content">
         <a href="#" className="footer-link">
           Stay Up To Date with our News and Notifications
