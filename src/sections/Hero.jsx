@@ -10,7 +10,7 @@ const Hero = () => {
       {/* TOP: Title block centered */}
       <div className="flex flex-col items-center">
         {/* 2 line breaks worth of space */}
-        <div className="h- 8 md:h-2" />
+        <div className="h- 8 md:h-14" />
 
         <Title className="text-center text-7xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
           WiTCON 2025

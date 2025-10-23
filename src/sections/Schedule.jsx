@@ -5,7 +5,7 @@ import Subtitle from "../components/text/Subtitle";
 import Text from "../components/text/Text";
 import "../Schedule.css";
 import WiTCONCarousel from "../components/WiTCONCarousel";
-import Footer from "../sections/Footer"; // <-- updated path
+import Footer from "../sections/Footer";
 import Title from "../components/text/Title";
 
 const scheduleData = [
@@ -29,14 +29,15 @@ const scheduleData = [
 const Schedule = () => {
   return (
     <>
-      <WiTCONCarousel />
 
-<section className="schedule-section">
-  <div className="schedule-container mx-auto max-w-5xl">
-    <div className="text-center">
-      <Title className="schedule-title">Schedule</Title>
-      <Subtitle className="schedule-time-range">From 9:00 AM - 7:00 PM</Subtitle>
-    </div>
+
+      <section className="schedule-section">
+        <div className="schedule-container mx-auto max-w-5xl">
+          <div className="text-center">
+            <Title className="schedule-title">Schedule</Title>
+            <Subtitle className="schedule-time-range">From 9:00 AM - 7:00 PM</Subtitle>
+          </div>
+
           <div className="schedule-box">
             {scheduleData.map((item, index) => (
               <div key={index} className="schedule-row">
@@ -46,6 +47,10 @@ const Schedule = () => {
               </div>
             ))}
           </div>
+      {/* Spacer to push below fixed navbar */}
+      <div className="h-24 md:h-32" />
+
+      <WiTCONCarousel />
         </div>
       </section>
 

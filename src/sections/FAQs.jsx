@@ -88,7 +88,7 @@ const FAQs = () => {
 
   return (
 <section className="faq-section">
-  <div className="faq-container mx-auto max-w-10xl text-left">
+  <div className="faq-container mx-auto max-w-10xl text-left space-y-16 md:space-y-10">
     {/* Title only */}
     <div className="w-full text-center">
       <Subtitle className="text-3xl font-bold mb-8 text-white">
