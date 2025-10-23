@@ -74,7 +74,7 @@ const wicsTeam = [
   { role: "WiCs Web Developer", name: "Shatoya Gardner", image: WICsWebDeveloper2Img },
   { role: "WiCs Industry Relations", name: "Kemely Alfonso", image: WICsIndustryRelations2Img },
   { role: "WiCs Comms Chair", name: "Manar Alhamad", image: WICsCommsChairImg },
-  { role: "WiCs Faculty Advisor", name: "Dr. Agoritsa Polyzou ", image: WICsFacultyAdvisorImg  },
+  { role: "WiCs Faculty Advisor", name: "Dr. Agoritsa Polyzou ", image: WICsFacultyAdvisorImg },
   { role: "WiCs Tech Lead", name: "Jernai Bennett", image: WICsTechLead2Img },
   { role: "WiCs Outreach Chair", name: "Bielky Ruiz", image: WICsOutreachChairImg },
   { role: "WiCs Alumni Advisor", name: "Mareline Ramirez", image: WICsAlumniAdvisorImg },
@@ -84,33 +84,33 @@ const wicsTeam = [
 ];
 
 const Team = () => {
-return (
-  <Layout>
-    <div className="team-container">
-      {/* WITCON Team */}
-      <div className="team-section">
-        <Subtitle> WiTCON Team</Subtitle>
-                  <div className="h-2" />
-                  <Text>Meet the team that makes WiTCON a Reality</Text>
-                  <div className="h-2" />
+  return (
+    <Layout>
+      <div className="team-container">
+        {/* WITCON Team */}
+        <div className="team-section">
+          <Subtitle> WiTCON Team</Subtitle>
+          <div className="h-2" />
+          <Text>Meet the team that makes WiTCON a Reality</Text>
+          <div className="h-2" />
 
-        <div className="team-grid">
-          {witconTeam.map((member, index) => (
-            <div className="team-member" key={index}>
-              <img src={member.image || DefaultImg} alt={member.role} />
-              <Text>{member.role}</Text>
-              <Text className="team-name">{member.name}</Text>
-            </div>
-          ))}
+          <div className="team-grid">
+            {witconTeam.map((member, index) => (
+              <div className="team-member" key={index}>
+                <img src={member.image || DefaultImg} alt={member.role} />
+                <Text>{member.role}</Text>
+                <Text className="team-name">{member.name}</Text>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
         {/* WiCS Team */}
         <div className="team-section">
           <Subtitle>WiCS Team</Subtitle>
-              <div className="h-2" />
-                  <Text>Meet the team that makes WiCS a Reality</Text>
-              <div className="h-2" />
+          <div className="h-2" />
+          <Text>Meet the team that makes WiCS a Reality</Text>
+          <div className="h-2" />
           <div className="team-grid">
             {wicsTeam.map((member, index) => (
               <div className="team-member" key={index}>

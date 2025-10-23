@@ -12,8 +12,6 @@ import FIUCEC from '../assets/Company logos/FIUCEC.png';
 import RewriteTheCode from '../assets/Company logos/RewriteTheCode.png';
 import Kaseya from '../assets/Company logos/Kaseya.png';
 import Celsius from '../assets/Company logos/Celsius.png';
-
-// ⬇️ Add your WiCS logo (adjust path/filename as needed)
 import wicsLogo from "../assets/wicsLogo.svg";
 
 const sponsors = [
@@ -36,7 +34,7 @@ const communitySponsors = [
 
 export default function SponsorsSection() {
   return (
-    <section className="mb-10 max-w-screen-lg mx-auto px-2 pt-6">
+    <section className="mb-10 max-w-screen-xl mx-auto pt-6">
       <div className="grid place-items-center">
         <Subtitle className="py-10 text-center">Our Sponsors</Subtitle>
       </div>
@@ -50,20 +48,21 @@ export default function SponsorsSection() {
           </div>
         ))}
       </div>
+      
+<div className="grid place-items-center mt-24 md:mt-32 pb-8 md:pb-12">
+  <Subtitle className="text-center mb-0">Our Community Partners</Subtitle>
+</div>
 
-      <div className="grid place-items-center">
-        <Subtitle className="py-10 text-center">Our Community Partners</Subtitle>
+<div className="mt-6 md:mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-20 items-center justify-center">
+  {communitySponsors.map((sponsor, index) => (
+    <div key={index} className="flex justify-center">
+      <div className="w-52 h-52 flex items-center justify-center overflow-hidden">
+        <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
       </div>
+    </div>
+  ))}
+</div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-10 items-center justify-center">
-        {communitySponsors.map((sponsor, index) => (
-          <div key={index} className="flex justify-center">
-            <div className="w-52 h-52 flex items-center justify-center overflow-hidden">
-              <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
-            </div>
-          </div>
-        ))}
-      </div>
 
       {/* WiCS logo at the very bottom */}
       <div className="flex flex-col items-center justify-center text-center">

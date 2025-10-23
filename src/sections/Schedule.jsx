@@ -29,8 +29,6 @@ const scheduleData = [
 const Schedule = () => {
   return (
     <>
-
-
       <section className="schedule-section">
         <div className="schedule-container mx-auto max-w-5xl">
           <div className="text-center">
@@ -38,7 +36,7 @@ const Schedule = () => {
             <Subtitle className="schedule-time-range">From 9:00 AM - 7:00 PM</Subtitle>
           </div>
 
-          <div className="schedule-box">
+          <div className="schedule-box mt-6 md:mt-12">
             {scheduleData.map((item, index) => (
               <div key={index} className="schedule-row">
                 <Text className="schedule-time">{item.time}</Text>
@@ -47,10 +45,10 @@ const Schedule = () => {
               </div>
             ))}
           </div>
-      {/* Spacer to push below fixed navbar */}
-      <div className="h-24 md:h-32" />
+          {/* Spacer to push below fixed navbar */}
+          <div className="h-24 md:h-32" />
 
-      <WiTCONCarousel />
+          <WiTCONCarousel />
         </div>
       </section>
 
