@@ -1,7 +1,14 @@
 /* Overall Section */
 .witcon-section {
-  padding: 5% 10%;
+  padding: 5% 0%;
   color: white;
+}
+
+/* NEW: align this section to the same width/left edge as the navbar */
+.witcon-container {
+  max-width: 1280px;        /* match your nav's max width (e.g., max-w-screen-xl/2xl) */
+  margin: 0 auto;           /* centers the block */
+  padding: 0 3.5rem;        /* match nav horizontal padding (≈ Tailwind md:px-14) */
 }
 
 /* Layout */
@@ -17,7 +24,7 @@
 .text-box {
   flex: 1;
   min-width: 40%;
-  font-size: 100%;
+  font-size: 120%;
   line-height: 1.8;
   text-align: left;
   padding: 30px;

@@ -1,12 +1,12 @@
 /* FAQ Section */
 .faq-section {
-    padding: 5% 12.5%;
+    padding: 2% 18%;
     color: white;
   }
   
   /* Centered FAQ Container */
   .faqs-container {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: auto;
   }
   
@@ -30,7 +30,7 @@
   .faq-item {
     background: rgba(255, 255, 255, 0.1); /* Darker Default */
     transition: background 0.3s ease;
-    padding: 15px;
+    padding: 16px;
     border-radius: 10px;
     cursor: pointer;
   }
@@ -49,7 +49,7 @@
   
   /* FAQ Answer (Align Left, Not Centered) */
   .faq-answer {
-    font-size: 16px;
+    font-size: 18px;
     color: #ddd;
     text-align: left; /* This fixes the alignment issue */
   }

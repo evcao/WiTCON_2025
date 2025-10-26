@@ -6,14 +6,14 @@ import Text from "../components/text/Text";
 
 const Hero = () => {
   return (
-    <section className="my-0 grid grid-cols-1 w-[85%] max-w-screen-2xl mx-auto px-6 md:px-18 sm:pt-2 md:pt-4 lg:pt-6 xl:pt-8">
+    <section className="my-0 grid grid-cols-1 w-[70%] max-w-screen-2xl mx-auto px-6 md:px-18 sm:pt-2 md:pt-4 lg:pt-6 xl:pt-8">
       {/* TOP: Title block centered */}
       <div className="flex flex-col items-center">
         {/* 2 line breaks worth of space */}
-        <div className="h- 8 md:h-2" />
+        <div className="h-8 md:h-14" />
 
         <Title className="text-center text-7xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-          WiTCON 2025
+          W i T C O N - 2 0 2 5
         </Title>
 
         {/* Subtitle on its own line */}
@@ -22,7 +22,7 @@ const Hero = () => {
         </Subtitle>
 
         {/* 3 line breaks worth of space */}
-        <div className="mt-6" />
+        <div className="mt-16" />
       </div>
 
       {/* Between location and hosted-by: two columns (text left, image right) */}
@@ -36,13 +36,12 @@ const Hero = () => {
           <Subtitle className="font-[font-ari] block">Ballrooms, Graham Center</Subtitle>
           
           <a href="https://lu.ma/hwyplw5v">
-            <button className="bg-pink-500 hover:bg-pink-700 active:bg-pink-400 text-white font-[Pixelify_Sans] py-2 px-4 rounded max-w-50 mt-9">
+            <button className="bg-pink-500 hover:bg-pink-700 active:bg-pink-400 text-white font-[public/fonts/ari/ari-w9500-condensed-bold.ttf] py-2 px-4 rounded max-w-50 mt-9">
               Register now!
             </button>
           </a>
           <div className="h-10" />
-          <Text>Florida’s largest student-led women in tech conference</Text>
-          <Text>Hosted by Women in Computer Science at Florida International University </Text>
+          <Subtitle>Florida’s largest student-led women in tech conference hosted by the Women in Computer Science (WiCS) club </Subtitle>
           <div className="h-7" />
 
         </div>

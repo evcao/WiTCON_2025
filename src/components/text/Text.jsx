@@ -1,3 +1,3 @@
 export default function Text({ children, className = "" }) {
-  return <p className={`text-base text-white font-[Pixelify_Sans] ${className}`}>{children}</p>;
+  return <p className={`text-base text-white font-[public/fonts/ari/ari-w9500-bold.ttf] ${className}`}>{children}</p>;
 }
