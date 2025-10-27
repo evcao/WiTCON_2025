@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import "tailwindcss/utilities";
 
+/* 80% page zoom (Chromium browsers only) */
+html.zoom-80,
+html.zoom-80 body {
+  zoom: 0.8;
+}
+
 :root {
   line-height: 1.5;
   font-weight: 400;
