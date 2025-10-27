@@ -4,8 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/witcon-2025/',
-  plugins: [react(),
-    tailwindcss(),
-  ],
+  base: '/WiTCON_2025/', // <- must match repo name & case
+  plugins: [react(), tailwindcss()],
 })
